@@ -1,8 +1,9 @@
+--------------------------------------------------------------------------------
 ---- database ------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 ---- insurance -----------------------------------------------------------------
---------------------------------------------------------------------------------
 
 host:     dev.insurance.db
 env:      dev
@@ -23,3 +24,23 @@ password: https://secret.io/database/insurance/prd/password
 type:     mysql
 
 --------------------------------------------------------------------------------
+---- drug ----------------------------------------------------------------------
+
+host:     dev.drug.db
+env:      dev
+username: readwrite_dev
+password: https://secret.io/database/drug/dev/password
+type:     mysql
+
+host:     stg.drug.db
+env:      stg
+username: readwrite_stg
+password: https://secret.io/database/drug/stg/password
+type:     mysql
+
+host:     prd.drug.db
+env:      prd
+accounts: [admin,         https://secret.io/database/drug/prd/admin/password]
+          [readwrite_prd, https://secret.io/database/drug/prd/readwrite_prd/password]
+          [readonly_prd,  https://secret.io/database/drug/prd/readonly_prd/password]
+type:     mysql
