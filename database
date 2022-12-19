@@ -1,0 +1,25 @@
+---- database ------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+---- insurance -----------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+host:     dev.insurance.db
+env:      dev
+username: readwrite_dev
+password: https://secret.io/database/insurance/dev/password
+type:     mysql
+
+host:     stg.insurance.db
+env:      stg
+username: readwrite_stg
+password: https://secret.io/database/insurance/stg/password
+type:     mysql
+
+host:     prd.insurance.db
+env:      prd
+username: readwrite_prd
+password: https://secret.io/database/insurance/prd/password
+type:     mysql
+
+--------------------------------------------------------------------------------
